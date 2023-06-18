@@ -1,7 +1,7 @@
 girls = ["Anna", "Maria", "Eva"]
 
 for girl in girls:
-    print (girl +"; ")
+    print (girl +"!")
 
 
 for x in range(20):

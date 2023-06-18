@@ -1,6 +1,6 @@
 import csv
 
-csv_file = open('test.csv', 'w')
+csv_file = open('test2.csv', 'w', newline='')
 
 writer = csv.writer(csv_file, delimiter =';')
 
