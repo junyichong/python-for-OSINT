@@ -1,5 +1,7 @@
-from duckduckgo_search import ddg
+from duckduckgo_search import DDGS
 
 keywords = 'osint'
-results = ddg(keywords, region='us-en', safesearch='Off', time='y')
-print(results)
+
+with DDGS() as ddgs:
+    for r in ddgs.text(keywords, region='us-en', safesearch='Off', timelimit='y'):
+        print(r)
